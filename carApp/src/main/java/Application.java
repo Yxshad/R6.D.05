@@ -1,14 +1,14 @@
 public class Application {
     public static void main(String[] args) {
-        Voiture maVoiture = new Voiture("Sedan", "Bleu");
-        Conducteur moi = new Conducteur("John", 20);
+        Car maCar = new Car("Sedan", "Bleu");
+        Driver moi = new Driver("John", 20);
 
-        moi.demarrerVoiture(maVoiture);
-        maVoiture.accelerer();
-        moi.changerVitesse(maVoiture, 80);
-        maVoiture.ralentir();
-        moi.changerVitesse(maVoiture,30);
-        moi.arreterVoiture(maVoiture);
+        Car.startCar(moi);
+        maCar.accelerate();
+        maCar.changeSpeed(80, moi);
+        maCar.slowDown();
+        maCar.changeSpeed(30, moi);
+        Car.arreterVoiture(moi);
         System.out.println("fini");
     }
 }

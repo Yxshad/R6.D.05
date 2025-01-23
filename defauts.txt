@@ -1,3 +1,4 @@
 -Dans arreterVoiture et demarrerVoiture, les paramètres voiture ne sont jamais utilisés
 -La vitesseActuelle n'est jamais utilisée
 -Les attributs des classes ne sont jamais définis comme finaux
+-Nombre magique dans estAdulte
